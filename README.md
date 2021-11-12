@@ -1,3 +1,7 @@
+# Why fork?
+
+This fork has been created to add tvOS support as discussed in https://github.com/Kureev/react-native-blur/pull/390
+
 # `@react-native-community/blur`
 
 [![npm version](https://badge.fury.io/js/%40react-native-community%2Fblur.svg)](https://badge.fury.io/js/%40react-native-community%2Fblur)
