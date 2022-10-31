@@ -12,9 +12,23 @@
 		215426C528894FC500DF69C3 /* BlurEffectWithAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426BF28894FC400DF69C3 /* BlurEffectWithAmount.m */; };
 		215426C628894FC500DF69C3 /* BlurViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426C028894FC400DF69C3 /* BlurViewManager.m */; };
 		215426C728894FC500DF69C3 /* VibrancyViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426C228894FC500DF69C3 /* VibrancyViewManager.m */; };
+		3C157157291044D900558425 /* VibrancyViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426C228894FC500DF69C3 /* VibrancyViewManager.m */; };
+		3C157158291044D900558425 /* VibrancyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426BB28894FC400DF69C3 /* VibrancyView.m */; };
+		3C157159291044D900558425 /* BlurEffectWithAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426BF28894FC400DF69C3 /* BlurEffectWithAmount.m */; };
+		3C15715A291044D900558425 /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426BC28894FC400DF69C3 /* BlurView.m */; };
+		3C15715B291044D900558425 /* BlurViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215426C028894FC400DF69C3 /* BlurViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3C15715D291044D900558425 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,9 +52,17 @@
 		215426C028894FC400DF69C3 /* BlurViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurViewManager.m; sourceTree = "<group>"; };
 		215426C128894FC400DF69C3 /* BlurViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurViewManager.h; sourceTree = "<group>"; };
 		215426C228894FC500DF69C3 /* VibrancyViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibrancyViewManager.m; sourceTree = "<group>"; };
+		3C157161291044D900558425 /* libRNBlur-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNBlur-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C15715C291044D900558425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58B511D81A9E6C8500147676 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,12 +95,30 @@
 				215426B928894FC400DF69C3 /* VibrancyViewManager.h */,
 				215426C228894FC500DF69C3 /* VibrancyViewManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				3C157161291044D900558425 /* libRNBlur-tvOS.a */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C157155291044D900558425 /* RNBlur-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C15715E291044D900558425 /* Build configuration list for PBXNativeTarget "RNBlur-tvOS" */;
+			buildPhases = (
+				3C157156291044D900558425 /* Sources */,
+				3C15715C291044D900558425 /* Frameworks */,
+				3C15715D291044D900558425 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNBlur-tvOS";
+			productName = RCTDataManager;
+			productReference = 3C157161291044D900558425 /* libRNBlur-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		58B511DA1A9E6C8500147676 /* RNBlur */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNBlur" */;
@@ -124,11 +164,24 @@
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNBlur */,
+				3C157155291044D900558425 /* RNBlur-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C157156291044D900558425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C157157291044D900558425 /* VibrancyViewManager.m in Sources */,
+				3C157158291044D900558425 /* VibrancyView.m in Sources */,
+				3C157159291044D900558425 /* BlurEffectWithAmount.m in Sources */,
+				3C15715A291044D900558425 /* BlurView.m in Sources */,
+				3C15715B291044D900558425 /* BlurViewManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +197,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		3C15715F291044D900558425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3C157160291044D900558425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -274,6 +361,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C15715E291044D900558425 /* Build configuration list for PBXNativeTarget "RNBlur-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C15715F291044D900558425 /* Debug */,
+				3C157160291044D900558425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNBlur" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
